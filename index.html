@@ -1,0 +1,65 @@
+<!-- 
+        Name: Ilyes Abdellatif Bouazza
+        Email : ilyesabdellatif_bouazza@student.uml.edu
+        University: UMass Lowell
+        Class: GUI 1 Fall 2024
+        Homework 3: Create Multiplication Table
+        FILE : index.html
+    -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- title of the page -->
+    <h1>Dynamic Multiplication Table</h1>
+    <!-- Form that has inputs and labels for instructions and to show any errors -->
+    <form id="form">
+      <!-- Form title asking the user to enter all the ranges for rows and columns -->
+      <h3>Please enter all the table ranges</h3>
+
+      <!-- input field for the min column -->
+      <div class="form-group">
+        <label>Min Column Value</label>
+        <input id="min-column" type="text" />
+        <label class="error"></label>
+      </div>
+      <!-- input field for the max column -->
+      <div class="form-group">
+        <label>Max Column Value</label>
+        <input id="max-column" type="text" />
+        <label class="error"></label>
+      </div>
+
+      <!-- input fieldfor the min row -->
+      <div class="form-group">
+        <label>Min Row Value</label>
+        <input id="min-row" type="text" />
+        <label class="error"></label>
+      </div>
+
+      <!-- input field for the max row -->
+      <div class="form-group">
+        <label>Max Row Value</label>
+        <input id="max-row" type="text" />
+        <label class="error"></label>
+      </div>
+
+      <!-- buttons generate to generate table and reset to clear user inputs in the form   -->
+      <div class="buttons">
+        <input id="generate-btn" type="button" value="generate" />
+        <input id="reset-btn" type="button" value="reset" />
+      </div>
+    </form>
+
+    <!-- Multiplication table is going to be in this continer -->
+    <div id="container-table"></div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+<!-- sources :
+I used sources provided by the professor in the hw3 pdf that posted on blackboard -->
